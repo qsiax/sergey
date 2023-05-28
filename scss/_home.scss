@@ -1,0 +1,81 @@
+.home {
+
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 92.5px;
+    }
+
+    &__block {
+        position: relative;
+        overflow: visible;
+        &:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__heading {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 77px;
+        margin-bottom: 40px;
+        margin-top: 12px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 550px;
+    }
+
+    &__image-wrapper {
+        width: 461.5px;
+        height: 497px;
+        background: url(/source/image-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        position: relative;
+        padding-top: 65px;
+        padding-left: 72px;
+    }
+
+    &__image {
+        width: 300px;
+        height: 350px;
+        background: url(/source/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__pagination-wrapper {
+        display: flex;
+        margin-top: 29px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__pagination {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: url(/source/pagination.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:first-child {
+            background: $text;
+        }
+    }
+}
+
